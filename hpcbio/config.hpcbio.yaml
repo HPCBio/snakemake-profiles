@@ -1,0 +1,18 @@
+restart-times: 3
+local-cores: 1
+printshellcmds: true
+use-conda: true
+use-singularity: true
+jobs: 10
+keep-going: true
+max-threads: 48
+executor: slurm
+conda-prefix: /home/groups/hpcbio/conda/snakemake/shared
+singularity-prefix: /home/groups/hpcbio/singularity
+default-resources:
+  - "mem_mb=(threads*1700)"
+  - "runtime=60"
+  - "slurm_account=hpcbio"
+  - "slurm_partition=hpcbio,hpcbioamd"
+  - "nodes=1"
+  - "tmpdir='/scratch'"

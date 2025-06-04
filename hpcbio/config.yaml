@@ -1,0 +1,18 @@
+restart-times: 3
+local-cores: 1
+printshellcmds: true
+use-conda: true
+use-singularity: true
+jobs: 10
+keep-going: true
+max-threads: 48
+executor: slurm
+remote-job-local-storage-prefix: /scratch
+wrapper-prefix: "file:///home/labs/malhi_lab/paleogenomics/src/"
+conda-prefix: /home/labs/malhi_lab/paleogenomics/conda/snakemake/shared
+singularity-prefix: /home/labs/malhi_lab/paleogenomics/singularity
+default-resources:
+  - "mem_mb=(threads*1700)"
+  - "runtime=60"
+  - "slurm_partition=hpcbioamd,hpcbio"
+  - "nodes=1"
