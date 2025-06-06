@@ -10,7 +10,7 @@ executor: slurm
 remote-job-local-storage-prefix: /scratch
 slurm-no-account: true
 wrapper-prefix: "file:///home/labs/malhi_lab/paleogenomics/src/"
-conda-prefix: /home/labs/malhi_lab/paleogenomics/conda/snakemake/shared
+conda-prefix: /home/labs/malhi_lab/paleogenomics/conda/snakemake/popglen
 singularity-prefix: /home/labs/malhi_lab/paleogenomics/singularity
 default-resources:
   - "mem_mb=(threads*1700)"
